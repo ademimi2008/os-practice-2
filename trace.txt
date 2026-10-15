@@ -1,0 +1,669 @@
+7913  execve("/usr/bin/python3", ["python3", "hello.py"], 0x7ffe8b197998 /* 37 vars */) = 0
+7913  brk(NULL)                         = 0x1b60a000
+7913  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7964830b8000
+7913  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+7913  fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=19647, ...}) = 0
+7913  mmap(NULL, 19647, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7964830b3000
+7913  close(3</etc/ld.so.cache>)        = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/x86_64-linux-gnu/libm.so.6>
+7913  read(3</usr/lib/x86_64-linux-gnu/libm.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+7913  fstat(3</usr/lib/x86_64-linux-gnu/libm.so.6>, {st_mode=S_IFREG|0644, st_size=1198376, ...}) = 0
+7913  mmap(NULL, 1200152, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libm.so.6>, 0) = 0x796482f8d000
+7913  mmap(0x796482f9f000, 655360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libm.so.6>, 0x12000) = 0x796482f9f000
+7913  mmap(0x79648303f000, 466944, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libm.so.6>, 0xb2000) = 0x79648303f000
+7913  mmap(0x7964830b1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libm.so.6>, 0x123000) = 0x7964830b1000
+7913  close(3</usr/lib/x86_64-linux-gnu/libm.so.6>) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib/x86_64-linux-gnu/libz.so.1.3.1>
+7913  read(3</usr/lib/x86_64-linux-gnu/libz.so.1.3.1>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+7913  fstat(3</usr/lib/x86_64-linux-gnu/libz.so.1.3.1>, {st_mode=S_IFREG|0644, st_size=121272, ...}) = 0
+7913  mmap(NULL, 118936, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libz.so.1.3.1>, 0) = 0x796482f6f000
+7913  mmap(0x796482f72000, 77824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libz.so.1.3.1>, 0x3000) = 0x796482f72000
+7913  mmap(0x796482f85000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libz.so.1.3.1>, 0x16000) = 0x796482f85000
+7913  mmap(0x796482f8b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libz.so.1.3.1>, 0x1c000) = 0x796482f8b000
+7913  close(3</usr/lib/x86_64-linux-gnu/libz.so.1.3.1>) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/x86_64-linux-gnu/libexpat.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib/x86_64-linux-gnu/libexpat.so.1.11.2>
+7913  read(3</usr/lib/x86_64-linux-gnu/libexpat.so.1.11.2>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+7913  fstat(3</usr/lib/x86_64-linux-gnu/libexpat.so.1.11.2>, {st_mode=S_IFREG|0644, st_size=186704, ...}) = 0
+7913  mmap(NULL, 184448, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libexpat.so.1.11.2>, 0) = 0x796482f41000
+7913  mmap(0x796482f45000, 126976, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libexpat.so.1.11.2>, 0x4000) = 0x796482f45000
+7913  mmap(0x796482f64000, 32768, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libexpat.so.1.11.2>, 0x23000) = 0x796482f64000
+7913  mmap(0x796482f6c000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libexpat.so.1.11.2>, 0x2b000) = 0x796482f6c000
+7913  close(3</usr/lib/x86_64-linux-gnu/libexpat.so.1.11.2>) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/x86_64-linux-gnu/libc.so.6>
+7913  read(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832
+7913  pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+7913  fstat(3</usr/lib/x86_64-linux-gnu/libc.so.6>, {st_mode=S_IFREG|0755, st_size=2190608, ...}) = 0
+7913  pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+7913  mmap(NULL, 2231696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0) = 0x796482c00000
+7913  mmap(0x796482c28000, 1671168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x28000) = 0x796482c28000
+7913  mmap(0x796482dc0000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x1c0000) = 0x796482dc0000
+7913  mmap(0x796482e0e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x20e000) = 0x796482e0e000
+7913  mmap(0x796482e14000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x796482e14000
+7913  close(3</usr/lib/x86_64-linux-gnu/libc.so.6>) = 0
+7913  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796482f3f000
+7913  arch_prctl(ARCH_SET_FS, 0x796482f401c0) = 0
+7913  set_tid_address(0x796482f407e8)   = 7913
+7913  set_robust_list(0x796482f404a0, 24) = 0
+7913  rseq(0x796482f40100, 0x20, 0, 0x53053053) = 0
+7913  mprotect(0x796482e0e000, 16384, PROT_READ) = 0
+7913  mprotect(0x796482f6c000, 8192, PROT_READ) = 0
+7913  mprotect(0x796482f8b000, 4096, PROT_READ) = 0
+7913  mprotect(0x7964830b1000, 4096, PROT_READ) = 0
+7913  mprotect(0xa86000, 4096, PROT_READ) = 0
+7913  mprotect(0x7964830fd000, 8192, PROT_READ) = 0
+7913  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+7913  getrandom("\xe8\xcb\xe7\xa4\x00\xf2\x3e\xdc", 8, GRND_NONBLOCK) = 8
+7913  munmap(0x7964830b3000, 19647)     = 0
+7913  getrandom("\xb4\xf6\xcd\x21\x42\xd3\x3f\x2d\x5f\xc4\x96\x62\x52\xfb\x6d\x1b\x0a\xc8\x10\xf1\x68\x32\xa4\x27\xaa\x4f\xa5\x9b\x11\x49\xfb\xf8", 32, GRND_NONBLOCK) = 32
+7913  open("/proc/sys/vm/overcommit_memory", O_RDONLY) = 3</proc/sys/vm/overcommit_memory>
+7913  read(3</proc/sys/vm/overcommit_memory>, "0\n", 32) = 2
+7913  close(3</proc/sys/vm/overcommit_memory>) = 0
+7913  brk(NULL)                         = 0x1b60a000
+7913  brk(0x1b62b000)                   = 0x1b62b000
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/locale/C.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/C.utf8/LC_CTYPE>
+7913  fstat(3</usr/lib/locale/C.utf8/LC_CTYPE>, {st_mode=S_IFREG|0644, st_size=369120, ...}) = 0
+7913  mmap(NULL, 369120, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/C.utf8/LC_CTYPE>, 0) = 0x796482ee4000
+7913  close(3</usr/lib/locale/C.utf8/LC_CTYPE>) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY|O_CLOEXEC) = 3</usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache>
+7913  fstat(3</usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache>, {st_mode=S_IFREG|0644, st_size=27028, ...}) = 0
+7913  mmap(NULL, 27028, PROT_READ, MAP_SHARED, 3</usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache>, 0) = 0x796482edd000
+7913  close(3</usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache>) = 0
+7913  futex(0x796482e136ec, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+7913  getcwd("/home/ademi/os-practice-2", 4096) = 26
+7913  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+7913  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_DROPPABLE|MAP_ANONYMOUS, -1, 0) = 0x7964830b7000
+7913  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7964830b6000
+7913  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+7913  getrandom("\x40\x2e\x78\x6f\xe1\x57\x6d\x2d\x99\x14\xb8\x7d\x66\x5d\x41\x32\x72\x6a\x57\xfb\x05\xd6\xbc\xee\x91\x25\x06\x41\x4f\x2a\xfc\x5d", 32, 0) = 32
+7913  gettid()                          = 7913
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3</proc/7913/maps>
+7913  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+7913  fstat(3</proc/7913/maps>, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+7913  read(3</proc/7913/maps>, "00400000-00422000 r--p 00000000 "..., 1024) = 1024
+7913  read(3</proc/7913/maps>, "6482e12000-796482e14000 rw-p 002"..., 1024) = 1024
+7913  read(3</proc/7913/maps>, "\n796482f6f000-796482f72000 r--p "..., 1024) = 1024
+7913  read(3</proc/7913/maps>, "000 rw-p 00124000 08:30 13615   "..., 1024) = 1024
+7913  read(3</proc/7913/maps>, "          /usr/lib/x86_64-linux-"..., 1024) = 187
+7913  close(3</proc/7913/maps>)         = 0
+7913  sched_getaffinity(7913, 32, [0 1 2 3 4 5 6 7 8 9 10 11]) = 8
+7913  mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796482b00000
+7913  mmap(NULL, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796482e9c000
+7913  mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796482e7b000
+7913  brk(0x1b64c000)                   = 0x1b64c000
+7913  mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796482e77000
+7913  brk(0x1b66d000)                   = 0x1b66d000
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/python3", 0x7ffee0a62600, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/python3", 0x7ffee0a62600, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/bin/remote-cli/python3", 0x7ffee0a62600, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/sbin/python3", 0x7ffee0a62600, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/bin/python3", 0x7ffee0a62600, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/sbin/python3", 0x7ffee0a62600, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/bin/python3", {st_mode=S_IFREG|0755, st_size=7477160, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/bin/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+7913  readlink("/usr/bin/python3", "python3.14", 4096) = 10
+7913  readlink("/usr/bin/python3.14", 0x7ffee0a5d620, 4096) = -1 EINVAL (Invalid argument)
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/bin/python3._pth", O_RDONLY) = -1 ENOENT (No such file or directory)
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/bin/python3.14._pth", O_RDONLY) = -1 ENOENT (No such file or directory)
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/bin/pybuilddir.txt", O_RDONLY) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/bin/Modules/Setup.local", 0x7ffee0a62600, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/bin/lib/python314.zip", 0x7ffee0a622e0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python314.zip", 0x7ffee0a62600, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/bin/lib/python3.14/os.py", 0x7ffee0a62600, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/bin/lib/python3.14/os.pyc", 0x7ffee0a62600, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/os.py", {st_mode=S_IFREG|0644, st_size=41959, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796482a00000
+7913  brk(0x1b68e000)                   = 0x1b68e000
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3</usr/share/zoneinfo/Asia/Bishkek>
+7913  fstat(3</usr/share/zoneinfo/Asia/Bishkek>, {st_mode=S_IFREG|0644, st_size=969, ...}) = 0
+7913  fstat(3</usr/share/zoneinfo/Asia/Bishkek>, {st_mode=S_IFREG|0644, st_size=969, ...}) = 0
+7913  read(3</usr/share/zoneinfo/Asia/Bishkek>, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0\0"..., 4096) = 969
+7913  lseek(3</usr/share/zoneinfo/Asia/Bishkek>, -593, SEEK_CUR) = 376
+7913  read(3</usr/share/zoneinfo/Asia/Bishkek>, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0\0"..., 4096) = 593
+7913  lseek(3</usr/share/zoneinfo/Asia/Bishkek>, 968, SEEK_SET) = 968
+7913  close(3</usr/share/zoneinfo/Asia/Bishkek>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python314.zip", 0x7ffee0a61dc0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python314.zip", 0x7ffee0a622a0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3</usr/lib/python3.14>
+7913  fstat(3</usr/lib/python3.14>, {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+7913  getdents64(3</usr/lib/python3.14>, 0x1b675a30 /* 199 entries */, 32768) = 6760
+7913  getdents64(3</usr/lib/python3.14>, 0x1b675a30 /* 0 entries */, 32768) = 0
+7913  close(3</usr/lib/python3.14>)     = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/__init__.cpython-314-x86_64-linux-gnu.so", 0x7ffee0a622a0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/__init__.abi3.so", 0x7ffee0a622a0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/__init__.abi3-x86_64-linux-gnu.so", 0x7ffee0a622a0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/__init__.so", 0x7ffee0a622a0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5945, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5945, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/__pycache__/__init__.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/encodings/__pycache__/__init__.cpython-314.pyc>
+7913  fcntl(3</usr/lib/python3.14/encodings/__pycache__/__init__.cpython-314.pyc>, F_GETFD) = 0x1 (flags FD_CLOEXEC)
+7913  fstat(3</usr/lib/python3.14/encodings/__pycache__/__init__.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=6738, ...}) = 0
+7913  mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796482e56000
+7913  lseek(3</usr/lib/python3.14/encodings/__pycache__/__init__.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/encodings/__pycache__/__init__.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j9\27\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 6739) = 6738
+7913  read(3</usr/lib/python3.14/encodings/__pycache__/__init__.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/encodings/__pycache__/__init__.cpython-314.pyc>) = 0
+7913  munmap(0x796482e56000, 135168)    = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3</usr/lib/python3.14/encodings>
+7913  fstat(3</usr/lib/python3.14/encodings>, {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+7913  getdents64(3</usr/lib/python3.14/encodings>, 0x1b682940 /* 126 entries */, 32768) = 4264
+7913  getdents64(3</usr/lib/python3.14/encodings>, 0x1b682940 /* 0 entries */, 32768) = 0
+7913  close(3</usr/lib/python3.14/encodings>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15957, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15957, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/__pycache__/aliases.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/encodings/__pycache__/aliases.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/encodings/__pycache__/aliases.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=12556, ...}) = 0
+7913  brk(0x1b6c6000)                   = 0x1b6c6000
+7913  lseek(3</usr/lib/python3.14/encodings/__pycache__/aliases.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/encodings/__pycache__/aliases.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206jU>\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\25\0\0"..., 12557) = 12556
+7913  read(3</usr/lib/python3.14/encodings/__pycache__/aliases.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/encodings/__pycache__/aliases.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/__pycache__/utf_8.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/encodings/__pycache__/utf_8.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/encodings/__pycache__/utf_8.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=2330, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/encodings/__pycache__/utf_8.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/encodings/__pycache__/utf_8.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\355\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 2331) = 2330
+7913  read(3</usr/lib/python3.14/encodings/__pycache__/utf_8.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/encodings/__pycache__/utf_8.cpython-314.pyc>) = 0
+7913  rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796482c45cb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGXFSZ, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796482c45cb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+7913  rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+7913  rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796482c45cb0}, 8) = 0
+7913  rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796482c45cb0}, 8) = 0
+7913  rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  rt_sigaction(SIGINT, {sa_handler=0x707980, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796482c45cb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7913  fstat(0</dev/pts/6<char 136:6>>, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x6), ...}) = 0
+7913  fcntl(0</dev/pts/6<char 136:6>>, F_GETFD) = 0
+7913  fstat(0</dev/pts/6<char 136:6>>, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x6), ...}) = 0
+7913  ioctl(0</dev/pts/6<char 136:6>>, TCGETS2, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+7913  lseek(0</dev/pts/6<char 136:6>>, 0, SEEK_CUR) = -1 ESPIPE (Illegal seek)
+7913  ioctl(0</dev/pts/6<char 136:6>>, TCGETS2, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+7913  fcntl(1</dev/pts/6<char 136:6>>, F_GETFD) = 0
+7913  fstat(1</dev/pts/6<char 136:6>>, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x6), ...}) = 0
+7913  ioctl(1</dev/pts/6<char 136:6>>, TCGETS2, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+7913  brk(0x1b6eb000)                   = 0x1b6eb000
+7913  lseek(1</dev/pts/6<char 136:6>>, 0, SEEK_CUR) = -1 ESPIPE (Illegal seek)
+7913  ioctl(1</dev/pts/6<char 136:6>>, TCGETS2, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+7913  fcntl(2</dev/pts/6<char 136:6>>, F_GETFD) = 0
+7913  fstat(2</dev/pts/6<char 136:6>>, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x6), ...}) = 0
+7913  ioctl(2</dev/pts/6<char 136:6>>, TCGETS2, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+7913  lseek(2</dev/pts/6<char 136:6>>, 0, SEEK_CUR) = -1 ESPIPE (Illegal seek)
+7913  ioctl(2</dev/pts/6<char 136:6>>, TCGETS2, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+7913  brk(0x1b70c000)                   = 0x1b70c000
+7913  brk(0x1b72d000)                   = 0x1b72d000
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/bin/pyvenv.cfg", 0x7ffee0a61b00, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/pyvenv.cfg", 0x7ffee0a61b20, 0) = -1 ENOENT (No such file or directory)
+7913  geteuid()                         = 1000
+7913  getuid()                          = 1000
+7913  getegid()                         = 1000
+7913  getgid()                          = 1000
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/.local/lib/python3.14/site-packages", 0x7ffee0a61e50, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3</usr/local/lib/python3.14/dist-packages>
+7913  fstat(3</usr/local/lib/python3.14/dist-packages>, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+7913  getdents64(3</usr/local/lib/python3.14/dist-packages>, 0x1b71ac00 /* 2 entries */, 32768) = 48
+7913  getdents64(3</usr/local/lib/python3.14/dist-packages>, 0x1b71ac00 /* 0 entries */, 32768) = 0
+7913  close(3</usr/local/lib/python3.14/dist-packages>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3</usr/lib/python3/dist-packages>
+7913  fstat(3</usr/lib/python3/dist-packages>, {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+7913  getdents64(3</usr/lib/python3/dist-packages>, 0x1b71ac00 /* 170 entries */, 32768) = 7024
+7913  getdents64(3</usr/lib/python3/dist-packages>, 0x1b71ac00 /* 0 entries */, 32768) = 0
+7913  close(3</usr/lib/python3/dist-packages>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages/distutils-precedence.pth", {st_mode=S_IFREG|0644, st_size=151, ...}, AT_SYMLINK_NOFOLLOW) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages/distutils-precedence.pth", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3/dist-packages/distutils-precedence.pth>
+7913  fstat(3</usr/lib/python3/dist-packages/distutils-precedence.pth>, {st_mode=S_IFREG|0644, st_size=151, ...}) = 0
+7913  brk(0x1b75b000)                   = 0x1b75b000
+7913  lseek(3</usr/lib/python3/dist-packages/distutils-precedence.pth>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3/dist-packages/distutils-precedence.pth>, "import os; var = 'SETUPTOOLS_USE"..., 152) = 151
+7913  read(3</usr/lib/python3/dist-packages/distutils-precedence.pth>, "", 1) = 0
+7913  close(3</usr/lib/python3/dist-packages/distutils-precedence.pth>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/utf_8_sig.py", {st_mode=S_IFREG|0644, st_size=4133, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/utf_8_sig.py", {st_mode=S_IFREG|0644, st_size=4133, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/encodings/__pycache__/utf_8_sig.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/encodings/__pycache__/utf_8_sig.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/encodings/__pycache__/utf_8_sig.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=7200, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/encodings/__pycache__/utf_8_sig.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/encodings/__pycache__/utf_8_sig.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j%\20\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 7201) = 7200
+7913  read(3</usr/lib/python3.14/encodings/__pycache__/utf_8_sig.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/encodings/__pycache__/utf_8_sig.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3</usr/lib/python3.14/lib-dynload>
+7913  fstat(3</usr/lib/python3.14/lib-dynload>, {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+7913  getdents64(3</usr/lib/python3.14/lib-dynload>, 0x1b725400 /* 51 entries */, 32768) = 3264
+7913  getdents64(3</usr/lib/python3.14/lib-dynload>, 0x1b725400 /* 0 entries */, 32768) = 0
+7913  close(3</usr/lib/python3.14/lib-dynload>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3</usr/local/lib/python3.14/dist-packages>
+7913  fstat(3</usr/local/lib/python3.14/dist-packages>, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+7913  getdents64(3</usr/local/lib/python3.14/dist-packages>, 0x1b725400 /* 2 entries */, 32768) = 48
+7913  getdents64(3</usr/local/lib/python3.14/dist-packages>, 0x1b725400 /* 0 entries */, 32768) = 0
+7913  close(3</usr/local/lib/python3.14/dist-packages>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3</usr/lib/python3/dist-packages>
+7913  fstat(3</usr/lib/python3/dist-packages>, {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+7913  getdents64(3</usr/lib/python3/dist-packages>, 0x1b725400 /* 170 entries */, 32768) = 7024
+7913  getdents64(3</usr/lib/python3/dist-packages>, 0x1b725400 /* 0 entries */, 32768) = 0
+7913  close(3</usr/lib/python3/dist-packages>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages/_distutils_hack/__init__.cpython-314-x86_64-linux-gnu.so", 0x7ffee0a612b0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages/_distutils_hack/__init__.abi3.so", 0x7ffee0a612b0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages/_distutils_hack/__init__.abi3-x86_64-linux-gnu.so", 0x7ffee0a612b0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages/_distutils_hack/__init__.so", 0x7ffee0a612b0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages/_distutils_hack/__init__.py", {st_mode=S_IFREG|0644, st_size=6755, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages/_distutils_hack/__init__.py", {st_mode=S_IFREG|0644, st_size=6755, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages/_distutils_hack/__pycache__/__init__.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3/dist-packages/_distutils_hack/__pycache__/__init__.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3/dist-packages/_distutils_hack/__pycache__/__init__.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=11661, ...}) = 0
+7913  lseek(3</usr/lib/python3/dist-packages/_distutils_hack/__pycache__/__init__.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3/dist-packages/_distutils_hack/__pycache__/__init__.cpython-314.pyc>, "+\16\r\n\0\0\0\0\16\352\3hc\32\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 11662) = 11661
+7913  read(3</usr/lib/python3/dist-packages/_distutils_hack/__pycache__/__init__.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3/dist-packages/_distutils_hack/__pycache__/__init__.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/dist-packages", 0x7ffee0a61e70, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/__pycache__/sitecustomize.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/__pycache__/sitecustomize.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/__pycache__/sitecustomize.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=305, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/__pycache__/sitecustomize.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/__pycache__/sitecustomize.cpython-314.pyc>, "+\16\r\n\0\0\0\0W\323\325i\233\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 306) = 305
+7913  read(3</usr/lib/python3.14/__pycache__/sitecustomize.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/__pycache__/sitecustomize.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages/apport_python_hook.py", {st_mode=S_IFREG|0644, st_size=8896, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages/apport_python_hook.py", {st_mode=S_IFREG|0644, st_size=8896, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages/__pycache__/apport_python_hook.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3/dist-packages/__pycache__/apport_python_hook.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3/dist-packages/__pycache__/apport_python_hook.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=10239, ...}) = 0
+7913  lseek(3</usr/lib/python3/dist-packages/__pycache__/apport_python_hook.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3/dist-packages/__pycache__/apport_python_hook.cpython-314.pyc>, "+\16\r\n\0\0\0\0o\306Fj\300\"\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0"..., 10240) = 10239
+7913  read(3</usr/lib/python3/dist-packages/__pycache__/apport_python_hook.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3/dist-packages/__pycache__/apport_python_hook.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/types.py", {st_mode=S_IFREG|0644, st_size=11459, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/types.py", {st_mode=S_IFREG|0644, st_size=11459, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/__pycache__/types.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/__pycache__/types.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/__pycache__/types.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=15840, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/__pycache__/types.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/__pycache__/types.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\303,\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 15841) = 15840
+7913  read(3</usr/lib/python3.14/__pycache__/types.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/__pycache__/types.cpython-314.pyc>) = 0
+7913  getcwd("/home/ademi/os-practice-2", 1024) = 26
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2/hello.py", {st_mode=S_IFREG|0644, st_size=252, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2/hello.py", O_RDONLY|O_CLOEXEC) = 3</home/ademi/os-practice-2/hello.py>
+7913  fstat(3</home/ademi/os-practice-2/hello.py>, {st_mode=S_IFREG|0644, st_size=252, ...}) = 0
+7913  lseek(3</home/ademi/os-practice-2/hello.py>, 0, SEEK_CUR) = 0
+7913  lseek(3</home/ademi/os-practice-2/hello.py>, 0, SEEK_CUR) = 0
+7913  lseek(3</home/ademi/os-practice-2/hello.py>, 0, SEEK_END) = 252
+7913  lseek(3</home/ademi/os-practice-2/hello.py>, 0, SEEK_CUR) = 252
+7913  lseek(3</home/ademi/os-practice-2/hello.py>, 0, SEEK_SET) = 0
+7913  read(3</home/ademi/os-practice-2/hello.py>, "\nfrom pathlib import Path\n\nfile_"..., 131072) = 252
+7913  read(3</home/ademi/os-practice-2/hello.py>, "", 130820) = 0
+7913  lseek(3</home/ademi/os-practice-2/hello.py>, 0, SEEK_SET) = 0
+7913  close(3</home/ademi/os-practice-2/hello.py>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2/hello.py", {st_mode=S_IFREG|0644, st_size=252, ...}, 0) = 0
+7913  readlink("hello.py", 0x7ffee0a50e80, 4096) = -1 EINVAL (Invalid argument)
+7913  getcwd("/home/ademi/os-practice-2", 1024) = 26
+7913  readlink("/home/ademi/os-practice-2/hello.py", 0x7ffee0a51a60, 1023) = -1 EINVAL (Invalid argument)
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2/hello.py", O_RDONLY) = 3</home/ademi/os-practice-2/hello.py>
+7913  ioctl(3</home/ademi/os-practice-2/hello.py>, FIOCLEX) = 0
+7913  fstat(3</home/ademi/os-practice-2/hello.py>, {st_mode=S_IFREG|0644, st_size=252, ...}) = 0
+7913  ioctl(3</home/ademi/os-practice-2/hello.py>, TCGETS2, 0x7ffee0a62e80) = -1 ENOTTY (Inappropriate ioctl for device)
+7913  lseek(3</home/ademi/os-practice-2/hello.py>, 0, SEEK_CUR) = 0
+7913  fstat(3</home/ademi/os-practice-2/hello.py>, {st_mode=S_IFREG|0644, st_size=252, ...}) = 0
+7913  read(3</home/ademi/os-practice-2/hello.py>, "\nfrom pathlib import Path\n\nfile_"..., 4096) = 252
+7913  lseek(3</home/ademi/os-practice-2/hello.py>, 0, SEEK_SET) = 0
+7913  read(3</home/ademi/os-practice-2/hello.py>, "\nfrom pathlib import Path\n\nfile_"..., 4096) = 252
+7913  read(3</home/ademi/os-practice-2/hello.py>, "", 4096) = 0
+7913  close(3</home/ademi/os-practice-2/hello.py>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3</home/ademi/os-practice-2>
+7913  fstat(3</home/ademi/os-practice-2>, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+7913  getdents64(3</home/ademi/os-practice-2>, 0x1b734620 /* 8 entries */, 32768) = 232
+7913  getdents64(3</home/ademi/os-practice-2>, 0x1b734620 /* 0 entries */, 32768) = 0
+7913  close(3</home/ademi/os-practice-2>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib/__init__.cpython-314-x86_64-linux-gnu.so", 0x7ffee0a62290, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib/__init__.abi3.so", 0x7ffee0a62290, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib/__init__.abi3-x86_64-linux-gnu.so", 0x7ffee0a62290, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib/__init__.so", 0x7ffee0a62290, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib/__init__.py", {st_mode=S_IFREG|0644, st_size=46833, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib/__init__.py", {st_mode=S_IFREG|0644, st_size=46833, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib/__pycache__/__init__.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/pathlib/__pycache__/__init__.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/pathlib/__pycache__/__init__.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=61651, ...}) = 0
+7913  brk(0x1b787000)                   = 0x1b787000
+7913  lseek(3</usr/lib/python3.14/pathlib/__pycache__/__init__.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/pathlib/__pycache__/__init__.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\361\266\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 61652) = 61651
+7913  read(3</usr/lib/python3.14/pathlib/__pycache__/__init__.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/pathlib/__pycache__/__init__.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/operator.py", {st_mode=S_IFREG|0644, st_size=11158, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/operator.py", {st_mode=S_IFREG|0644, st_size=11158, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/__pycache__/operator.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/__pycache__/operator.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/__pycache__/operator.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=18996, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/__pycache__/operator.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/__pycache__/operator.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\226+\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 18997) = 18996
+7913  read(3</usr/lib/python3.14/__pycache__/operator.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/__pycache__/operator.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/glob.py", {st_mode=S_IFREG|0644, st_size=20768, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/glob.py", {st_mode=S_IFREG|0644, st_size=20768, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/__pycache__/glob.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/__pycache__/glob.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/__pycache__/glob.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=26106, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/__pycache__/glob.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/__pycache__/glob.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j Q\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 26107) = 26106
+7913  read(3</usr/lib/python3.14/__pycache__/glob.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/__pycache__/glob.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/contextlib.py", {st_mode=S_IFREG|0644, st_size=27801, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/contextlib.py", {st_mode=S_IFREG|0644, st_size=27801, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/__pycache__/contextlib.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/__pycache__/contextlib.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/__pycache__/contextlib.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=31136, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/__pycache__/contextlib.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/__pycache__/contextlib.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\231l\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\7\0\0"..., 31137) = 31136
+7913  read(3</usr/lib/python3.14/__pycache__/contextlib.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/__pycache__/contextlib.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/collections/__init__.cpython-314-x86_64-linux-gnu.so", 0x7ffee0a602b0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/collections/__init__.abi3.so", 0x7ffee0a602b0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/collections/__init__.abi3-x86_64-linux-gnu.so", 0x7ffee0a602b0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/collections/__init__.so", 0x7ffee0a602b0, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=52903, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=52903, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/collections/__pycache__/__init__.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/collections/__pycache__/__init__.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/collections/__pycache__/__init__.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=74759, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/collections/__pycache__/__init__.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  lseek(3</usr/lib/python3.14/collections/__pycache__/__init__.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/collections/__pycache__/__init__.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\247\316\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 74760) = 74759
+7913  read(3</usr/lib/python3.14/collections/__pycache__/__init__.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/collections/__pycache__/__init__.cpython-314.pyc>) = 0
+7913  mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796482900000
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/keyword.py", {st_mode=S_IFREG|0644, st_size=1073, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/keyword.py", {st_mode=S_IFREG|0644, st_size=1073, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/__pycache__/keyword.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/__pycache__/keyword.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/__pycache__/keyword.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=1531, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/__pycache__/keyword.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/__pycache__/keyword.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j1\4\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0"..., 1532) = 1531
+7913  read(3</usr/lib/python3.14/__pycache__/keyword.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/__pycache__/keyword.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/reprlib.py", {st_mode=S_IFREG|0644, st_size=8064, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/reprlib.py", {st_mode=S_IFREG|0644, st_size=8064, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/__pycache__/reprlib.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/__pycache__/reprlib.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/__pycache__/reprlib.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=11680, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/__pycache__/reprlib.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/__pycache__/reprlib.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\200\37\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 11681) = 11680
+7913  read(3</usr/lib/python3.14/__pycache__/reprlib.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/__pycache__/reprlib.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/functools.py", {st_mode=S_IFREG|0644, st_size=43561, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/functools.py", {st_mode=S_IFREG|0644, st_size=43561, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/__pycache__/functools.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/__pycache__/functools.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/__pycache__/functools.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=47989, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/__pycache__/functools.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/__pycache__/functools.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j)\252\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0"..., 47990) = 47989
+7913  read(3</usr/lib/python3.14/__pycache__/functools.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/__pycache__/functools.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/__init__.cpython-314-x86_64-linux-gnu.so", 0x7ffee0a60d50, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/__init__.abi3.so", 0x7ffee0a60d50, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/__init__.abi3-x86_64-linux-gnu.so", 0x7ffee0a60d50, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/__init__.so", 0x7ffee0a60d50, 0) = -1 ENOENT (No such file or directory)
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/__init__.py", {st_mode=S_IFREG|0644, st_size=17876, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/__init__.py", {st_mode=S_IFREG|0644, st_size=17876, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/__pycache__/__init__.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/re/__pycache__/__init__.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/re/__pycache__/__init__.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=19965, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/re/__pycache__/__init__.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/re/__pycache__/__init__.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\324E\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 19966) = 19965
+7913  read(3</usr/lib/python3.14/re/__pycache__/__init__.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/re/__pycache__/__init__.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/enum.py", {st_mode=S_IFREG|0644, st_size=85442, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/enum.py", {st_mode=S_IFREG|0644, st_size=85442, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/__pycache__/enum.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/__pycache__/enum.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/__pycache__/enum.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=88026, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/__pycache__/enum.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  lseek(3</usr/lib/python3.14/__pycache__/enum.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  brk(0x1b7b8000)                   = 0x1b7b8000
+7913  read(3</usr/lib/python3.14/__pycache__/enum.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\302M\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0"..., 88027) = 88026
+7913  read(3</usr/lib/python3.14/__pycache__/enum.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/__pycache__/enum.cpython-314.pyc>) = 0
+7913  brk(0x1b791000)                   = 0x1b791000
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3</usr/lib/python3.14/re>
+7913  fstat(3</usr/lib/python3.14/re>, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+7913  getdents64(3</usr/lib/python3.14/re>, 0x1b776a30 /* 8 entries */, 32768) = 248
+7913  getdents64(3</usr/lib/python3.14/re>, 0x1b776a30 /* 0 entries */, 32768) = 0
+7913  close(3</usr/lib/python3.14/re>)  = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/_compiler.py", {st_mode=S_IFREG|0644, st_size=26855, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/_compiler.py", {st_mode=S_IFREG|0644, st_size=26855, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/__pycache__/_compiler.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/re/__pycache__/_compiler.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/re/__pycache__/_compiler.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=29663, ...}) = 0
+7913  brk(0x1b7b7000)                   = 0x1b7b7000
+7913  lseek(3</usr/lib/python3.14/re/__pycache__/_compiler.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/re/__pycache__/_compiler.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\347h\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 29664) = 29663
+7913  read(3</usr/lib/python3.14/re/__pycache__/_compiler.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/re/__pycache__/_compiler.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/_parser.py", {st_mode=S_IFREG|0644, st_size=40353, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/_parser.py", {st_mode=S_IFREG|0644, st_size=40353, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/__pycache__/_parser.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/re/__pycache__/_parser.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/re/__pycache__/_parser.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=45253, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/re/__pycache__/_parser.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/re/__pycache__/_parser.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\241\235\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\27\0\0"..., 45254) = 45253
+7913  read(3</usr/lib/python3.14/re/__pycache__/_parser.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/re/__pycache__/_parser.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/_constants.py", {st_mode=S_IFREG|0644, st_size=6036, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/_constants.py", {st_mode=S_IFREG|0644, st_size=6036, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/__pycache__/_constants.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/re/__pycache__/_constants.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/re/__pycache__/_constants.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=5623, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/re/__pycache__/_constants.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/re/__pycache__/_constants.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\224\27\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\24\0\0"..., 5624) = 5623
+7913  read(3</usr/lib/python3.14/re/__pycache__/_constants.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/re/__pycache__/_constants.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/_casefix.py", {st_mode=S_IFREG|0644, st_size=5444, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/_casefix.py", {st_mode=S_IFREG|0644, st_size=5444, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/re/__pycache__/_casefix.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/re/__pycache__/_casefix.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/re/__pycache__/_casefix.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=1808, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/re/__pycache__/_casefix.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/re/__pycache__/_casefix.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206jD\25\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 1809) = 1808
+7913  read(3</usr/lib/python3.14/re/__pycache__/_casefix.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/re/__pycache__/_casefix.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/copyreg.py", {st_mode=S_IFREG|0644, st_size=7716, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/copyreg.py", {st_mode=S_IFREG|0644, st_size=7716, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/__pycache__/copyreg.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/__pycache__/copyreg.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/__pycache__/copyreg.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=7916, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/__pycache__/copyreg.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/__pycache__/copyreg.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j$\36\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 7917) = 7916
+7913  read(3</usr/lib/python3.14/__pycache__/copyreg.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/__pycache__/copyreg.cpython-314.pyc>) = 0
+7913  mmap(NULL, 208896, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x796482e44000
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/fnmatch.py", {st_mode=S_IFREG|0644, st_size=6791, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/fnmatch.py", {st_mode=S_IFREG|0644, st_size=6791, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/__pycache__/fnmatch.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/__pycache__/fnmatch.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/__pycache__/fnmatch.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=7862, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/__pycache__/fnmatch.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/__pycache__/fnmatch.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\207\32\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 7863) = 7862
+7913  read(3</usr/lib/python3.14/__pycache__/fnmatch.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/__pycache__/fnmatch.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3</usr/lib/python3.14/pathlib>
+7913  fstat(3</usr/lib/python3.14/pathlib>, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+7913  getdents64(3</usr/lib/python3.14/pathlib>, 0x1b6f10b0 /* 7 entries */, 32768) = 208
+7913  getdents64(3</usr/lib/python3.14/pathlib>, 0x1b6f10b0 /* 0 entries */, 32768) = 0
+7913  close(3</usr/lib/python3.14/pathlib>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib/_os.py", {st_mode=S_IFREG|0644, st_size=18161, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib/_os.py", {st_mode=S_IFREG|0644, st_size=18161, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/pathlib/__pycache__/_os.cpython-314.pyc", O_RDONLY|O_CLOEXEC) = 3</usr/lib/python3.14/pathlib/__pycache__/_os.cpython-314.pyc>
+7913  fstat(3</usr/lib/python3.14/pathlib/__pycache__/_os.cpython-314.pyc>, {st_mode=S_IFREG|0644, st_size=22439, ...}) = 0
+7913  lseek(3</usr/lib/python3.14/pathlib/__pycache__/_os.cpython-314.pyc>, 0, SEEK_CUR) = 0
+7913  read(3</usr/lib/python3.14/pathlib/__pycache__/_os.cpython-314.pyc>, "+\16\r\n\0\0\0\0\366\331\206j\361F\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 22440) = 22439
+7913  read(3</usr/lib/python3.14/pathlib/__pycache__/_os.cpython-314.pyc>, "", 1) = 0
+7913  close(3</usr/lib/python3.14/pathlib/__pycache__/_os.cpython-314.pyc>) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/home/ademi/os-practice-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3.14/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/local/lib/python3.14/dist-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7913  newfstatat(AT_FDCWD</home/ademi/os-practice-2>, "/usr/lib/python3/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+7913  openat(AT_FDCWD</home/ademi/os-practice-2>, "sample.txt", O_RDONLY|O_CLOEXEC) = 3</home/ademi/os-practice-2/sample.txt>
+7913  fstat(3</home/ademi/os-practice-2/sample.txt>, {st_mode=S_IFREG|0644, st_size=39, ...}) = 0
+7913  read(3</home/ademi/os-practice-2/sample.txt>, "Hello from Linux!\nThis is a test"..., 40) = 39
+7913  read(3</home/ademi/os-practice-2/sample.txt>, "", 1) = 0
+7913  close(3</home/ademi/os-practice-2/sample.txt>) = 0
+7913  write(1</dev/pts/6<char 136:6>>, "File: sample.txt\n", 17) = 17
+7913  write(1</dev/pts/6<char 136:6>>, "Size: 39 bytes\n", 15) = 15
+7913  rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796482c45cb0}, {sa_handler=0x707980, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x796482c45cb0}, 8) = 0
+7913  munmap(0x796482900000, 1048576)   = 0
+7913  munmap(0x796482e44000, 208896)    = 0
+7913  munmap(0x796482b00000, 1048576)   = 0
+7913  munmap(0x796482e77000, 16384)     = 0
+7913  exit_group(0)                     = ?
+7913  +++ exited with 0 +++

@@ -1,0 +1,10 @@
+2026-10-15 ERROR auth Login failed
+2026-10-15 WARN auth Too many attempts
+2026-10-15 ERROR database Connection failed
+2026-10-15 ERROR auth Invalid password
+2026-10-15 WARN payment Slow response
+2026-10-15 ERROR database Query failed
+2026-10-15 ERROR payment Payment rejected
+2026-10-15 WARN auth Session expired
+2026-10-15 ERROR auth Access denied
+2026-10-15 WARN database High load
